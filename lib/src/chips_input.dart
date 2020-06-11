@@ -65,6 +65,7 @@ class ChipsInput<T> extends StatefulWidget {
 class ChipsInputState<T> extends State<ChipsInput<T>>
     implements TextInputClient {
   static const kObjectReplacementChar = 0xFFFC;
+  AutofillScope get currentAutofillScope => null;
   Set<T> _chips = Set<T>();
   List<T> _suggestions;
   StreamController<List<T>> _suggestionsStreamController;
